@@ -1,0 +1,145 @@
+*{
+
+    margin:0; padding:0;
+}
+
+.main-div{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/backcover.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}  
+nav {
+    height: 8rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-div nav img{
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.main-div .nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    color: #262d78;
+   
+}
+
+.main-div .signin-btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #965cf2, #ff8adc);
+    border: none;
+    margin-right: 20px;
+}
+
+.intro-section {
+
+/* margin-left: 150px; */
+display: flex;
+position: relative;
+top:20%;
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+}
+
+.intro-section .left-section h1{
+
+    margin-left: 20px;
+    font-family: 'Roboto Serif', serif;
+    color: #3e4794;
+    font-size: 70px;
+
+}
+
+.intro-section .left-section h4{
+
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #262d78;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    
+}
+
+.left-section .learn-more-btn {
+
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #965cf2, #ff8adc);
+    border: none;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+.imgs-div img:nth-child(3) {
+
+    width: 100%;
+margin: 0 auto;
+}
+img.vector-img, img.vector-dot {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+}
+
+.left-section , .imgs-div{
+    width: 50%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .intro-section {
+        display: block;
+    }
+    .left-section, .imgs-div {
+        width: 100%;
+    }
+    .imgs-div img:nth-child(3) {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    .main-div {
+        height: 100%;
+    }
+    nav {
+        text-align: center;
+        display: block;
+        height: 100%;
+        padding: 20px 0 ;
+    }
+    .main-div .nav-items{
+        width: 80%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .main-div .signin-btn{
+        margin-right: 0;
+    }
+    .main-div nav img{
+        margin-left: 0;
+    }
+}
